@@ -5,10 +5,6 @@ interface User {
   name: string;
 }
 
-const tempUser: User = {
-  uid: 'XYZ789',
-  name: 'Pepe',
-}
 
 export const Usuario = () => {
   const [user, setUser] = useState<User>();
@@ -22,7 +18,7 @@ export const Usuario = () => {
 
   return (
     <div className="mt-5">
-      <h3>Usuario: useState</h3>
+      <h3>Usuario:</h3>
 
       <button onClick={login} className="btn btn-outline-primary">
         Login
